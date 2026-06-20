@@ -1,6 +1,7 @@
 # 🌾 Farm-2-Trade
 
 Farm-2-Trade is a full-stack agriculture marketplace platform that directly connects farmers and retailers, enabling efficient trading, secure transactions, logistics tracking, weather-based insights, and AI-powered recommendations. The platform also incorporates Continuous Authentication and Machine Learning-based risk analysis to enhance user security.
+
 🤝 External Service Integrations
 
 Farm-2-Trade securely communicates with multiple third-party services through API-based integrations and B2B communication channels:
