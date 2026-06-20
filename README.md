@@ -7,9 +7,13 @@ Farm-2-Trade is a full-stack agriculture marketplace platform that directly conn
 Farm-2-Trade securely communicates with multiple third-party services through API-based integrations and B2B communication channels:
 
 Google Gemini AI – Intelligent farming recommendations and risk assessment
+
 Weather API – Real-time weather insights and agricultural advisories
+
 Cashfree Payment Gateway – Secure online transactions
+
 Gmail SMTP – Automated email notifications and alerts
+
 Continuous Authentication Service – Machine learning-based behavioral risk analysis
 
 ---
