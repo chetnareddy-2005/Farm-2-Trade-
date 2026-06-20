@@ -1,119 +1,373 @@
-# 🌾 Farm2Trade: Premium Agri-Logistics & B2B Intelligence
+# 🌾 Farm-2-Trade
 
-![Platform Banner](https://via.placeholder.com/1200x400/16a34a/ffffff?text=Farm2Trade+Supply+Chain+Intelligence)
+Farm-2-Trade is a full-stack agriculture marketplace platform that directly connects farmers and retailers, enabling efficient trading, secure transactions, logistics tracking, weather-based insights, and AI-powered recommendations. The platform also incorporates Continuous Authentication and Machine Learning-based risk analysis to enhance user security.
+🤝 External Service Integrations
 
-🚀 **Key Highlights:**
-- **Zero-Trust Security Infrastructure:** Continuous AI-driven authentication.
-- **B2B Double-Handshake Transaction:** Secure receipt confirmation for verified arrivals.
-- **Automated Escrow & Wallet System:** Real-time financial settlement and transparency.
-- **Weather Intelligence Hub:** Hyper-local climate tracking + AI-powered crop advisory.
-- **Integrated Precision Logistics:** Real-time fleet tracking and multi-party negotiation.
+Farm-2-Trade securely communicates with multiple third-party services through API-based integrations and B2B communication channels:
 
----
-
-## 🚀 Live Demo
-
-🔗 **Frontend:** [https://chetnareddy-2005.github.io/agri-backend/](https://chetnareddy-2005.github.io/agri-backend/)
-
-🔗 **Backend API:** [https://agri-backend-xz72.onrender.com](https://agri-backend-xz72.onrender.com)
-
-⚠️ *Note: Backend is hosted on free tier (Render), first load may take ~30-50 seconds.*
+Google Gemini AI – Intelligent farming recommendations and risk assessment
+Weather API – Real-time weather insights and agricultural advisories
+Cashfree Payment Gateway – Secure online transactions
+Gmail SMTP – Automated email notifications and alerts
+Continuous Authentication Service – Machine learning-based behavioral risk analysis
 
 ---
 
-**Farm2Trade** is a high-fidelity, production-ready B2B platform designed to revolutionize the agricultural supply chain. By bridging the gap between Farmers, Retailers, and Transporters within a secure, zero-trust ecosystem, we ensure fairness, transparency, and operational excellence from farm to fork.
+## 🚀 Features
 
----
+### 👨‍🌾 Farmer Product Management
 
-## 🛡️ Zero-Trust & Continuous Authentication
-Our security posture is built on the principle of **Never Trust, Always Verify**.
+* Add, update, and manage agricultural products
+* Product image uploads
+* Inventory management
 
-- **Behavioral Biometrics**: We track micro-interactions (mouse velocity, typing cadence) to detect session hijacking.
-- **Dynamic Risk Scoring**: Real-time risk assessment (LOW/MEDIUM/HIGH) determines adaptive security challenges.
-- **Instant Termination**: Automatic session termination and identity isolation upon high-risk detection.
-- **Compact Risk Gauges**: Persistent visual indicators across all dashboards provide real-time security observability.
+### 🏪 Retailer Marketplace
 
----
+* Browse available products
+* Place orders directly with farmers
+* Order tracking and management
 
-## 💳 Financial Integrity & Settlement
-We've implemented a robust "Double-Handshake" mechanism to eliminate transaction friction.
+### 🤖 AI-Powered Insights
 
-1. **Escrow Management**: When a Retailer pays, funds are locked in a secure **Escrow Balance**.
-2. **Verified Handshake**: The Retailer confirms receipt via the "Confirm Receipt" protocol upon successful delivery.
-3. **Automated Release**: Confirmation triggers an immediate transfer of funds from Escrow to the Farmer's and Transporter's **Available Balance**.
-4. **Full Transparency**: Participants track their earnings through a dedicated **Financial Wallet Hub**.
+* Weather-based farming recommendations
+* Agricultural advisory system using Gemini AI
+* Risk assessment and decision support
 
----
+### 🔐 Security & Authentication
 
-## 🚀 Dashboard Breakdown
+* JWT-based authentication
+* Continuous authentication monitoring
+* Machine learning-based behavioral analysis
+* Risk analysis and security alerts
 
-### 👨‍🌾 1. Farmer Hub (Operational Intelligence)
-- **Marketplace Control**: List products for auction or fixed-price sales.
-- **Weather Node Monitor**: Real-time localized weather data integrated with Gemini AI for cultivation advice.
-- **Financial Hub**: Dedicated wallet showing locked vs. available funds.
-- **Automated Invoicing**: Instant PDF generation for every verified transaction.
+### 📦 Logistics Tracking
 
-### 🏪 2. Retailer Hub (Procurement Foresight)
-- **Smart Procurement**: Multi-criteria filtering, bidding engine, and dynamic negotiation.
-- **Verification Protocol**: Formal receipt verification to finalize logistics and financial cycles.
-- **Fleet Tracking**: Real-time Leaflet-powered map tracking of inbound shipments.
+* Shipment tracking
+* Delivery status monitoring
 
-### 🚛 3. Transporter Hub (Precision Logistics)
-- **Fleet Orchestration**: Interactive GPS map tracking and route optimization.
-- **Bidding Hub**: Dynamic price negotiation with retailers for delivery contracts.
-- **Proof of Delivery**: Digital signature and photo evidence submission.
-- **Earnings Tracker**: Real-time payout tracking for every kilometer traveled.
+### 💳 Payment Integration
+
+* Cashfree payment gateway integration
+
+### 📧 Notification System
+
+* Email alerts and notifications
+* Order updates and confirmations
+
+### 🗺️ Location & Mapping
+
+* Interactive maps using Leaflet
+* Location-based services
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend** | React 19, Vite, TailwindCSS (for base), Lucide Icons, Leaflet.js |
-| **Backend** | Spring Boot 3.x, Java 17, JPA/Hibernate, MySQL 8.x |
-| **Security Service** | Flask, Python 3.9, Scikit-Learn (Isolation Forest ML) |
-| **Intelligence** | Gemini AI (Crop Advisory), OpenWeather API |
-| **Financials** | Cashfree PG Integration, Custom Escrow Ledger |
+### Frontend
+
+* React.js
+* Vite
+* React Router
+* Leaflet Maps
+* CSS
+
+### Backend
+
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* Hibernate
+* JWT Authentication
+
+### Database
+
+* MySQL
+
+### AI & Machine Learning
+
+* Google Gemini AI
+* Continuous Authentication ML Model
+* Weather API
+
+### External Services
+
+* Cashfree Payment Gateway
+* Gmail SMTP
 
 ---
 
-## 🛠️ Setup & Installation
+## 📂 Project Structure
 
-### 📋 Prerequisites
-- **Java**: 17+ | **Node.js**: 20+ | **Python**: 3.9+ | **MySQL**: 8.x
-
-### 💻 Execution Commands
-
-#### 1. Backend (Spring Boot)
-```bash
-cd Farmer-Retailer/backend
-mvn clean install
-mvn spring-boot:run
+```text
+Farm-2-Trade
+│
+├── backend/              # Spring Boot Backend
+├── frontend/             # React Frontend
+├── continuous-auth/      # ML-Based Continuous Authentication Service
+├── architecture.png
+├── README.md
+└── LICENSE
 ```
 
-#### 2. ML Security Node (Flask)
+---
+
+## ⚙️ Prerequisites
+
+Before running the project, install:
+
+* Java 17+
+* Maven 3.8+
+* Node.js 18+
+* Python 3.10+
+* MySQL 8+
+* Git
+
+---
+
+## 🗄️ Database Setup
+
+Create the database:
+
+```sql
+CREATE DATABASE agri;
+```
+
+Update database credentials in:
+
+```properties
+backend/src/main/resources/application.properties
+```
+
+Example:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/agri
+spring.datasource.username=root
+spring.datasource.password=your_password
+```
+
+---
+
+## 🔒 Continuous Authentication Setup
+
+Navigate to the authentication module:
+
 ```bash
-cd Farmer-Retailer/continuous-auth
+cd continuous-auth
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
+Train the ML model:
+
+```bash
+python -m src.train
+```
+
+Start the authentication service:
+
+```bash
 python app.py
 ```
 
-#### 3. Frontend (React)
+Authentication Service URL:
+
+```text
+http://localhost:5000
+```
+
+---
+
+## 🔧 Backend Setup
+
+Navigate to backend:
+
 ```bash
-cd Farmer-Retailer/frontend
-npm install --legacy-peer-deps
+cd backend
+```
+
+Run Spring Boot application:
+
+```bash
+mvn spring-boot:run
+```
+
+Backend URL:
+
+```text
+http://localhost:8080
+```
+
+---
+
+## 🎨 Frontend Setup
+
+Navigate to frontend:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Frontend URL:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## ▶️ Running the Complete Application
+
+Start services in the following order:
+
+### 1. Start MySQL
+
+Ensure MySQL service is running and the database exists.
+
+### 2. Start Continuous Authentication Service
+
+```bash
+cd continuous-auth
+python app.py
+```
+
+### 3. Start Spring Boot Backend
+
+```bash
+cd backend
+mvn spring-boot:run
+```
+
+### 4. Start React Frontend
+
+```bash
+cd frontend
 npm run dev
 ```
 
 ---
 
-## 🏛️ Governance & KYC
-The platform includes a dedicated **Admin Oversight Center**:
-- **KYC Verification**: Document-based verification system for new Farmers and Transporters.
-- **Audit Logs**: Infinite audit trail of all security events and authentication challenges.
-- **Crisis Management**: Ability to broadcast emergency alerts (roadblocks, extreme weather) to specific regions.
+## 🌐 Application URLs
+
+| Service                   | URL                   |
+| ------------------------- | --------------------- |
+| Frontend                  | http://localhost:5173 |
+| Backend                   | http://localhost:8080 |
+| Continuous Authentication | http://localhost:5000 |
+| MySQL                     | localhost:3306        |
 
 ---
 
-Developed with ❤️ for the future of Digital Agriculture.
+## 🔐 Environment Variables
+
+Configure the following variables before deployment:
+
+```text
+GEMINI_API_KEY
+WEATHER_API_KEY
+LOCATION_API_KEY
+CASHFREE_APP_ID
+CASHFREE_SECRET_KEY
+MAIL_USERNAME
+MAIL_PASSWORD
+SPRING_DATASOURCE_PASSWORD
+```
+
+---
+
+## 🧠 AI Features
+
+The platform uses Google Gemini AI for:
+
+* Weather-based agricultural recommendations
+* Farmer advisory support
+* Security risk assessment insights
+* Intelligent decision support
+
+---
+
+## 🔄 System Workflow
+
+```text
+User
+  ↓
+React Frontend
+  ↓
+Spring Boot Backend
+  ↓
+MySQL Database
+  ↓
+Continuous Authentication Service
+  ↓
+Machine Learning Risk Analysis
+  ↓
+Gemini AI Recommendation
+  ↓
+ALLOW / OTP / BLOCK
+```
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+* Home Page
+* Farmer Dashboard
+* Retailer Dashboard
+* Product Marketplace
+* Logistics Tracker
+* Weather Advisory Dashboard
+* Authentication Dashboard
+
+---
+
+## 🔮 Future Enhancements
+
+* Mobile Application
+* Multi-language Support
+* Crop Disease Detection
+* Real-Time Market Price Prediction
+* Advanced Analytics Dashboard
+* IoT Sensor Integration
+* AI-Based Demand Forecasting
+
+---
+
+## 👩‍💻 Author
+
+**Chetna Reddy C.Y**
+
+B.Tech Student | Full Stack Developer | AI & Cloud Enthusiast
+
+GitHub:
+https://github.com/chetnareddy-2005
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
