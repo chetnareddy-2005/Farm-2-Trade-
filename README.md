@@ -128,6 +128,14 @@ Before running the project, install:
 * Git
 
 ---
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/chetnareddy-2005/Farm-2-Trade-.git
+cd Farm-2-Trade-
+
 
 ## 🗄️ Database Setup
 
